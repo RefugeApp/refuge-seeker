@@ -123,6 +123,21 @@
   }
   .btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 38px -8px rgba(212,168,67,.62);background:linear-gradient(180deg,#eaca74,#dab44d);border-color:rgba(245,239,227,.7)}
   .hero-note{font-size:13.5px;color:var(--cream-70);letter-spacing:.02em}
+  /* app store pill (hero) — matches homepage */
+  .hero-appstore{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border:1px solid rgba(245,239,227,.3);border-radius:100px;text-decoration:none;color:var(--cream);transition:all .3s;backdrop-filter:blur(4px)}
+  .hero-appstore:hover{border-color:rgba(245,239,227,.6);background:rgba(245,239,227,.08)}
+  .hero-appstore svg{width:18px;height:18px;fill:var(--cream)}
+  .hero-appstore .as-text{display:flex;flex-direction:column;line-height:1.1}
+  .hero-appstore .as-sm{font-size:.55rem;font-weight:300;letter-spacing:.03em}
+  .hero-appstore .as-lg{font-size:.9rem;font-weight:600;letter-spacing:.01em}
+  /* app store badge (final section) — matches homepage cave */
+  .store-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+  .store-btn{display:inline-flex;align-items:center;gap:11px;padding:13px 26px;border-radius:13px;border:1.5px solid rgba(245,239,227,.32);background:transparent;text-decoration:none;transition:border-color .3s,background .3s}
+  .store-btn:hover{border-color:rgba(245,239,227,.65);background:rgba(245,239,227,.05)}
+  .store-btn svg{width:26px;height:26px;fill:var(--cream)}
+  .store-btn .st{display:flex;flex-direction:column;line-height:1.15;text-align:left}
+  .store-btn .st small{font-size:10px;color:var(--cream-50);font-weight:400;letter-spacing:.02em}
+  .store-btn .st strong{font-size:16px;color:var(--cream);font-weight:500;font-family:'DM Sans',sans-serif}
 
   /* scroll cue */
   .scroll-cue{
@@ -361,6 +376,10 @@
       <p class="hero-sub anim" style="animation-delay:1s">Type what's weighing on you. Refuge responds with thoughtful questions, Christian wisdom, and guided conversation designed to help you think clearly and honestly.<br><b>Built by a licensed counselor.</b></p>
       <div class="hero-actions anim" style="animation-delay:1.2s">
         <a class="btn-gold" href="https://app.refugeapp.ai" target="_blank" rel="noopener">Try Refuge Free</a>
+        <a class="hero-appstore" href="https://apps.apple.com/us/app/refuge-soul-companion/id6760268197" target="_blank" rel="noopener">
+          <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-62.1 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          <span class="as-text"><span class="as-sm">Download on the</span><span class="as-lg">App Store</span></span>
+        </a>
         <span class="hero-note">Free to start. Private from the first word.</span>
       </div>
     </div>
@@ -568,6 +587,12 @@
     <p class="lead" data-reveal style="--rd:180ms">Say the true thing first. See what it's like to be met with honesty instead of advice.</p>
     <a class="btn-gold" data-reveal style="--rd:240ms" href="https://app.refugeapp.ai" target="_blank" rel="noopener">Try Refuge Free</a>
     <p class="note" data-reveal style="--rd:300ms">Free to start. Private from the first word.</p>
+    <div class="store-buttons" data-reveal style="--rd:360ms">
+      <a href="https://apps.apple.com/us/app/refuge-soul-companion/id6760268197" target="_blank" rel="noopener" class="store-btn">
+        <svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <span class="st"><small>Download on the</small><strong>App Store</strong></span>
+      </a>
+    </div>
   </div>
 </section>
 
